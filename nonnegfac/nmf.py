@@ -68,7 +68,7 @@ class NMF_Base(object):
                 'max_iter': max_iter if max_iter is not None else self.default_max_iter,
                 'verbose': verbose,
                 'max_time': max_time if max_time is not None else self.default_max_time}
-        if init != None:
+        if init is not None:
             W = init[0].copy()
             H = init[1].copy()
             info['init'] = 'user_provided'
